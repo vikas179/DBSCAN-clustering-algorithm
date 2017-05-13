@@ -226,19 +226,6 @@ int expand(
     return return_value;
 }
 
-void dbindex()
-{
-	double db;
-	db=rand()%10;
-	printf("DBindex: %f\n",db);
-}
-
-void dunne()
-{
-	double dunn;
-	dunn=(double)rand()/(double)RAND_MAX;
-	printf("Dunn Index: %f\n",dunn);
-}
 
 int spread(
     unsigned int index,
@@ -346,8 +333,6 @@ int main(void) {
         printf("Minimum points: %u\n", minpts);
         print_points(points, num_points);
     }
-    dbindex();
-    dunne();
     free(points);
     return 0;
 }
