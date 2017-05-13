@@ -1,0 +1,2 @@
+clang -O2 -Wall -g -o dbscan dbscan.c -lm
+cat example.dat | ./dbscan
